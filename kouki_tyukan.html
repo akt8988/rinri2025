@@ -21,6 +21,25 @@
       text-decoration-thickness: 0.4em;
       text-underline-offset: 0.1em;
     }
+    /* ボタンエリアのスタイル */
+    .button-area {
+      margin: 20px 0;
+      text-align: center; /* ボタンを中央揃え */
+    }
+    /* ボタンのスタイル */
+    button {
+      font-size: 16px;
+      padding: 10px 20px;
+      margin: 0 10px 10px 10px; /* スマホで縦に並んだ時のために下にも余白 */
+      cursor: pointer;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      transition: background-color 0.2s;
+    }
+    button:hover {
+      background-color: #e0e0e0;
+    }
     /* 問題間の区切り線 */
     .question {
       margin-bottom: 12px;
@@ -48,11 +67,21 @@
       body {
         font-size: 16px;
       }
+      button {
+        width: 100%; /* スマホではボタンを幅いっぱいに */
+        margin: 5px 0;
+      }
     }
   </style>
 </head>
 <body>
   <h1><span class="highlight">倫理　重要語句確認テスト</span></h1>
+
+  <div class="button-area">
+    <button id="showAllBtn">すべての解答を表示</button>
+    <button id="hideAllBtn">すべての解答を非表示</button>
+  </div>
+
   <div id="quiz">
     <div class="question">1. 孔子とその弟子たちの言行録を『 <span class="toggle">（<span class="answer">論語</span>）</span> 』という。</div>
     <div class="question">2. 孔子は、親子・兄弟愛を広げた他者への親愛の情を <span class="toggle">（<span class="answer">仁</span>）</span> と定義した。</div>
@@ -115,15 +144,26 @@
     </div>
 
   <script>
-    // '.toggle' クラスを持つすべての要素を取得
+    // 個別のトグル機能
     document.querySelectorAll('.toggle').forEach(el => {
-      // 各要素にクリックイベントを追加
       el.addEventListener('click', () => {
-        // クリックされた要素内の '.answer' クラスを持つ要素を取得
         const a = el.querySelector('.answer');
-        // 解答の表示・非表示を切り替える
         // 現在 'inline' なら 'none' に、そうでなければ 'inline' にする
         a.style.display = (a.style.display === 'inline') ? 'none' : 'inline';
+      });
+    });
+
+    // 「すべての解答を表示」ボタン
+    document.getElementById('showAllBtn').addEventListener('click', () => {
+      document.querySelectorAll('.answer').forEach(answer => {
+        answer.style.display = 'inline';
+      });
+    });
+
+    // 「すべての解答を非表示」ボタン
+    document.getElementById('hideAllBtn').addEventListener('click', () => {
+      document.querySelectorAll('.answer').forEach(answer => {
+        answer.style.display = 'none';
       });
     });
   </script>
