@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>倫理　小テスト</title>
+  <style>
+    /* 基本的なスタイル設定 */
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+      line-height: 1.8;
+      font-size: 18px; /* デスクトップ時の文字サイズ */
+    }
+    /* 見出し用ハイライト下線 */
+    .highlight {
+      font-size: 0.9em;
+      font-weight: bold;
+      text-decoration-line: underline;
+      text-decoration-color: #dfff00;
+      text-decoration-thickness: 0.4em;
+      text-underline-offset: 0.1em;
+    }
+    /* 問題間の区切り線 */
+    .question {
+      margin-bottom: 12px;
+    }
+    .question + .question {
+      border-top: 1px solid gray;
+      padding-top: 12px;
+      margin-top: 12px;
+    }
+    /* 解答のスタイル（初期状態は非表示） */
+    .answer {
+      display: none;
+      color: blue;
+      font-weight: bold;
+    }
+    /* クリック領域のスタイル */
+    .toggle {
+      cursor: pointer;
+      background: #f0f0f0;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+    /* スマホ表示時に文字サイズを調整 */
+    @media (max-width: 600px) {
+      body {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1><span class="highlight">倫理　重要語句確認テスト</span></h1>
+  <div id="quiz">
+    <div class="question">1. 孔子とその弟子たちの言行録を『 <span class="toggle">（<span class="answer">論語</span>）</span> 』という。</div>
+    <div class="question">2. 孔子は、親子・兄弟愛を広げた他者への親愛の情を <span class="toggle">（<span class="answer">仁</span>）</span> と定義した。</div>
+    <div class="question">3. 仁の心が形をとって外にあらわれた社会規範を <span class="toggle">（<span class="answer">礼</span>）</span> という。</div>
+    <div class="question">4. 孔子は、自分の私利私欲をおさえることを <span class="toggle">（<span class="answer">克己</span>）</span> とよんだ。</div>
+    <div class="question">5. 感情や欲望を抑えて、社会規範としての礼に従うことを <span class="toggle">（<span class="answer">克己復礼</span>）</span> という。</div>
+    <div class="question">6. 孔子は、仁礼の徳を身につけた君子が国を治めるべきだとする <span class="toggle">（<span class="answer">徳治</span>）</span> 主義を唱えた。</div>
+    <div class="question">7. 孟子は、人は生まれながらに善を行う心を持つという <span class="toggle">（<span class="answer">性善</span>）</span> 説を主張した。</div>
+    <div class="question">8. 荀子は、人は生まれながらに悪の心を持つという <span class="toggle">（<span class="answer">性悪</span>）</span> 説を主張した。</div>
+    <div class="question">9. 荀子は、政治は礼にもとづいて行われるべきだとする <span class="toggle">（<span class="answer">礼治</span>）</span> 主義を唱えた。</div>
+    <div class="question">10. 韓非子は、人間を抑えるためには道徳ではなく法によるべきだとする <span class="toggle">（<span class="answer">法治</span>）</span> 主義を説いた。</div>
+    <div class="question">11. 老子は、すべてのものを生み出す自然の働きを <span class="toggle">（<span class="answer">道（タオ）</span>）</span> とよんだ。</div>
+    <div class="question">12. 道は対象としてとらえられず、名づけようがないので <span class="toggle">（<span class="answer">無</span>）</span> といわれる。</div>
+    <div class="question">13. 老子は、人と争わず、水のように柔らかく謙虚な態度である <span class="toggle">（<span class="answer">柔弱謙下</span>）</span> を説いた。</div>
+    <div class="question">14. 無理にコントロールせず、自然の流れや本来の姿を受け入れる生き方を <span class="toggle">（<span class="answer">無為自然</span>）</span> という。</div>
+    <div class="question">15. 老子は、理想的な社会として、小規模な国家である <span class="toggle">（<span class="answer">小国寡民</span>）</span> を説いた。</div>
+    <div class="question">16. 荘子は、ありのままの世界は万物が差別なく同じ価値を持つという <span class="toggle">（<span class="answer">万物斉同</span>）</span> を説いた。</div>
+    <div class="question">17. 心を素直にして自然と一つになる境地を <span class="toggle">（<span class="answer">心斎坐忘</span>）</span> という。</div>
+    <div class="question">18. 自然と一体になり、絶対的自由の境地に遊ぶことを <span class="toggle">（<span class="answer">逍遥遊</span>）</span> という。</div>
+    <div class="question">19. 人間を世界の中心に据え、理性を尊重するルネサンスの思想を <span class="toggle">（<span class="answer">ヒューマニズム</span>）</span> という。</div>
+    <div class="question">20. ピコ・デラ・ミランドラは、自分のあり方を決定する <span class="toggle">（<span class="answer">自由意思</span>）</span> に人間の尊厳があるとした。</div>
+    <div class="question">21. レオナルド・ダ・ヴィンチのように、広い知識や優れた技能を持つ理想的人間を <span class="toggle">（<span class="answer">万能人</span>）</span> という。</div>
+    <div class="question">22. 著書『愚神礼讃』で教会の腐敗などを批判したオランダの人文主義者は <span class="toggle">（<span class="answer">エラスムス</span>）</span> である。</div>
+    <div class="question">23. 著書『ユートピア』で私有財産のない理想社会を描いたイギリスの人文主義者は <span class="toggle">（<span class="answer">トマス・モア</span>）</span> である。</div>
+    <div class="question">24. カトリック教会が、サン＝ピエトロ大聖堂の改築資金を得るために販売したものを <span class="toggle">（<span class="answer">贖宥状</span>）</span> という。</div>
+    <div class="question">25. ルターは、教会の扉に「 <span class="toggle">（<span class="answer">95か条の意見書</span>）</span> 」を掲げ、宗教改革の口火を切った。</div>
+    <div class="question">26. カルヴァンは、魂が救われるかどうかはあらかじめ神によって決定されているという <span class="toggle">（<span class="answer">予定</span>）</span> 説を説いた。</div>
+    <div class="question">27. 職業生活を神の栄光を実現する場と捉える考え方を <span class="toggle">（<span class="answer">職業召命観</span>）</span> という。</div>
+    <div class="question">28. 科学革命によってもたらされた、自然観や思考の枠組みの転換を <span class="toggle">（<span class="answer">パラダイム</span>）</span> の転換という。</div>
+    <div class="question">29. コペルニクスは、天動説を否定し、 <span class="toggle">（<span class="answer">地動</span>）</span> 説を唱えた。</div>
+    <div class="question">30. 望遠鏡による天体観測を行い、地動説を支持した物理学者は <span class="toggle">（<span class="answer">ガリレオ・ガリレイ</span>）</span> である。</div>
+    <div class="question">31. 万有引力の法則を発見し、天体と地上の運動を統一的に説明したのは <span class="toggle">（<span class="answer">ニュートン</span>）</span> である。</div>
+    <div class="question">32. 自然界の変化を、因果法則にしたがった必然的運動とみなす見方を <span class="toggle">（<span class="answer">機械論</span>）</span> 的自然観という。</div>
+    <div class="question">33. ベーコンは、人間という生物の生理的制約に根ざす偏見を <span class="toggle">（<span class="answer">種族</span>）</span> のイドラとよんだ。</div>
+    <div class="question">34. ベーコンは、個人の性格や環境、教育などから生じる偏見を <span class="toggle">（<span class="answer">洞窟</span>）</span> のイドラとよんだ。</div>
+    <div class="question">35. ベーコンは、言葉の不適切な使用ややりとりから生じる偏見を <span class="toggle">（<span class="answer">市場</span>）</span> のイドラとよんだ。</div>
+    <div class="question">36. ベーコンは、伝統や権威を鵜吞みにすることから生じる偏見を <span class="toggle">（<span class="answer">劇場</span>）</span> のイドラとよんだ。</div>
+    <div class="question">37. 多くの実験や観察から一般的法則を導き出す方法を <span class="toggle">（<span class="answer">帰納</span>）</span> 法という。</div>
+    <div class="question">38. ベーコンやロックに代表される、知識の源泉を感覚や経験に求める哲学的立場を <span class="toggle">（<span class="answer">経験論</span>）</span> という。</div>
+    <div class="question">39. デカルトは、疑うことのできない真理から出発して知識を推論する <span class="toggle">（<span class="answer">演繹</span>）</span> 法を用いた。</div>
+    <div class="question">40. デカルトは、確実な真理を得るためにあらゆるものを疑う <span class="toggle">（<span class="answer">方法的懐疑</span>）</span> を行った。</div>
+    <div class="question">41. デカルトは、哲学の第一原理として「 <span class="toggle">（<span class="answer">われ思う、ゆえにわれあり</span>）</span> 」という真理に到達した。</div>
+    <div class="question">42. 精神と物体（身体）は独立した別個の実体であるとする考え方を <span class="toggle">（<span class="answer">物心二元</span>）</span> 論という。</div>
+    <div class="question">43. ロックは、人間の心は白紙（ <span class="toggle">（<span class="answer">タブラ・ラサ</span>）</span> ）であると主張した。</div>
+    <div class="question">44. 経験論に対し、理性による真理の把握を重視する立場を <span class="toggle">（<span class="answer">合理論</span>）</span> という。</div>
+    <div class="question">45. スピノザは、神と自然（万物）は同一であるとする「 <span class="toggle">（<span class="answer">神即自然</span>）</span> 」という言葉を残した。</div>
+    <div class="question">46. ライプニッツは、世界は分割不可能な非物質的実体である <span class="toggle">（<span class="answer">モナド</span>）</span> の集まりであるとした。</div>
+    <div class="question">47. ヒュームは、理性は「 <span class="toggle">（<span class="answer">情念</span>）</span> の奴隷」にすぎないと考えた。</div>
+    <div class="question">48. ヒュームは、自我（精神）はたえざる「 <span class="toggle">（<span class="answer">知覚の束</span>）</span> 」にすぎないと主張した。</div>
+    <div class="question">49. カントは、人間が経験に先立って持っている認識の形式を <span class="toggle">（<span class="answer">アプリオリ</span>）</span> とよんだ。</div>
+    <div class="question">50. カントは、対象からの刺激を受け取る受容的な能力を <span class="toggle">（<span class="answer">感性</span>）</span> とよんだ。</div>
+    <div class="question">51. カントは、感性が受け取った素材を概念化して認識を成立させる能力を <span class="toggle">（<span class="answer">悟性</span>）</span> とよんだ。</div>
+    <div class="question">52. カントは、認識の対象が人間に知覚される姿を <span class="toggle">（<span class="answer">現象</span>）</span> とよび、その背後にある真の姿を <span class="toggle">（<span class="answer">物自体</span>）</span> とした。</div>
+    <div class="question">53. 「認識が対象にしたがう」から「対象が認識にしたがう」への発想の転換を <span class="toggle">（<span class="answer">コペルニクス的転回</span>）</span> という。</div>
+    <div class="question">54. カントは、道徳法則にならない「もし〜ならば……せよ」という条件つきの命令を <span class="toggle">（<span class="answer">仮言命法</span>）</span> とよんだ。</div>
+    <div class="question">55. カントは、無条件に「〜せよ」と命じる道徳法則を <span class="toggle">（<span class="answer">定言命法</span>）</span> とよんだ。</div>
+    <div class="question">56. カントは、人間を単なる手段としてではなく、常に <span class="toggle">（<span class="answer">目的</span>）</span> として扱うべきだと説いた。</div>
+    <div class="question">57. ヘーゲルは、矛盾する対立を統合して高次元へ発展させる論理を <span class="toggle">（<span class="answer">弁証法</span>）</span> とよんだ。</div>
+    <div class="question">58. 弁証法において、対立する二つのものを統合し、より高い次元へ高めることを <span class="toggle">（<span class="answer">止揚</span>）</span> という。</div>
+    </div>
+
+  <script>
+    // '.toggle' クラスを持つすべての要素を取得
+    document.querySelectorAll('.toggle').forEach(el => {
+      // 各要素にクリックイベントを追加
+      el.addEventListener('click', () => {
+        // クリックされた要素内の '.answer' クラスを持つ要素を取得
+        const a = el.querySelector('.answer');
+        // 解答の表示・非表示を切り替える
+        // 現在 'inline' なら 'none' に、そうでなければ 'inline' にする
+        a.style.display = (a.style.display === 'inline') ? 'none' : 'inline';
+      });
+    });
+  </script>
+</body>
+</html>
